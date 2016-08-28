@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
         usage();
         return -1;
       }
-      N = strtol(argv[i],0,10)
+      N = strtol(argv[i],0,10);
       if (N <= 0) {
         usage();
         return -1;
