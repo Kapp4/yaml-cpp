@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <cstdlib>
 
 #include "yaml-cpp/emitterstyle.h"
 #include "yaml-cpp/eventhandler.h"
@@ -51,7 +52,7 @@ int main(int argc, char** argv) {
         usage();
         return -1;
       }
-      N = std::atoi(argv[i]);
+      N = strtol(argv[i],0,10)
       if (N <= 0) {
         usage();
         return -1;
